@@ -4,9 +4,9 @@
 
 ## Machine Learning
 
-
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/2.5D-Visual-Sound)
 ### 2.5D Visual Sound:
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/2.5D-Visual-Sound)
+
 
 **Description:** 
 <div style="text-align: justify">Binaural audio provides a listener with 3D sound sensation, allowing a rich perceptual experience of the scene.However, binaural recordings are scarcely available and require nontrivial expertise and equipment to obtain. We propose to convert common monaural audio into binaural audio by leveraging video.</div>
@@ -35,17 +35,29 @@
 **Description:** 
 <div style="text-align: justify">The Harris Corner detector is a standard technique for locating interest points on an image.Despite the appearance of many feature detectors in the last decade, it continues to be reference technique, which is typically used for camera caliberation,image matching, tracking or video stabilization.</div>
 
+**Example:**
+
+<center><img src="images/matched_home.png?raw=true" height="150"/></center>
+
 ---
 ### Hough Line and Circle Detector:
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Computer_Vision/tree/main/Hough_Line_And_Circle_Detector)
+
+**Description:**
+
+**Example:**
+
+<center><img src="images/input1.png?raw=true" height="150"/></center>
+
+<center><img src="images/finalLinesAndCircles.png?raw=true" height="150"/></center>
+
+---
 ### Camera Caliberation and Fundamental Matrix:
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Computer_Vision/tree/main/Camera_Caliberation_and_Fundamental_Matrix)
 
+**Description:**
 
----
+**Example:**
 
 
-
-
----
 
