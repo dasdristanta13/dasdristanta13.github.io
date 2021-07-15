@@ -47,15 +47,14 @@
 
 **Example:**
 
-<center><img src="images/input1.png?raw=true" height="150"/></center>
-
-<center><img src="images/finalLinesAndCircles.png?raw=true" height="150"/></center>
+<img src="images/input1.png?raw=true" height="150"/><img src="images/finalLinesAndCircles.png?raw=true" height="150"/>
 
 ---
 ### Camera Caliberation and Fundamental Matrix:
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Computer_Vision/tree/main/Camera_Caliberation_and_Fundamental_Matrix)
 
 **Description:**
+The objective of this project was to improve upon image matching by leveraging epipolar geometry of a stereo image pair while applying RANSAC to reject poorly matched feature points. After performing a simple camera calibration, SIFT feature points detected in an image pair were used to estimate the Fundamental Matrix; using the estimation of the Fundamental Matrix, RANSAC was used to match the image pair. The following sections describe the approach and highlight the results of the project.
 
 **Example:**
 
