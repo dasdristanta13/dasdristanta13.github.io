@@ -8,7 +8,8 @@
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/2.5D-Visual-Sound)
 ### 2.5D Visual Sound:
 
-**Description:** <div style="text-align: justify">Binaural audio provides a listener with 3D sound sensation, allowing a rich perceptual experience of the scene.However, binaural recordings are scarcely available and require nontrivial expertise and equipment to obtain. We propose to convert common monaural audio into binaural audio by leveraging video.</div>
+**Description:** 
+<div style="text-align: justify">Binaural audio provides a listener with 3D sound sensation, allowing a rich perceptual experience of the scene.However, binaural recordings are scarcely available and require nontrivial expertise and equipment to obtain. We propose to convert common monaural audio into binaural audio by leveraging video.</div>
 
 <center><img src="images/ML_Project_report.png?raw=true"/></center>
 ---
