@@ -24,9 +24,9 @@
 
 **Example:**
 
-<img src="images/bicycle.bmp?raw=true" width="270" height="180"/> <img src="images/motorcycle.bmp?raw=true" width="270" height="180"/>
+<img src="images/bicycle.bmp?raw=true" width="240" height="150"/><img src="images/motorcycle.bmp?raw=true" width="240" height="150"/>
 
-<center><img src="images/hybrid_image_scales3.jpg?raw=true"/></center>
+<center><img src="images/hybrid_image_scales3.jpg?raw=true" height="150"/></center>
 
 ---
 ### Harris Corner Detection and SIFT:
