@@ -54,6 +54,7 @@
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Computer_Vision/tree/main/Camera_Caliberation_and_Fundamental_Matrix)
 
 **Description:**
+
 The objective of this project was to improve upon image matching by leveraging epipolar geometry of a stereo image pair while applying RANSAC to reject poorly matched feature points. After performing a simple camera calibration, SIFT feature points detected in an image pair were used to estimate the Fundamental Matrix; using the estimation of the Fundamental Matrix, RANSAC was used to match the image pair. The following sections describe the approach and highlight the results of the project.
 
 **Example:**
@@ -65,4 +66,5 @@ The objective of this project was to improve upon image matching by leveraging e
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Fifa21EDA)
 
 **Description:**
+
 This project focuses on visualizing the Fifa 21 game data and getting inference out of that.Data includes latest edition FIFA 2021 players attributes like Age, Nationality, Overall, Potential, Club, Value, Wage, Preferred Foot, International Reputation, Weak Foot, Skill Moves, Work Rate, Position, Jersey Number, Joined, Loaned From, Contract Valid Until, Height, Weight, LS, ST, RS, LW, LF, CF, RF, RW, LAM, CAM, RAM, LM, LCM, CM, RCM, RM, LWB, LDM, CDM, RDM, RWB, LB, LCB, CB, RCB, RB, Crossing, Finishing, Heading, Accuracy, ShortPassing, Volleys, Dribbling, Curve, FKAccuracy, LongPassing, BallControl, Acceleration, SprintSpeed, Agility, Reactions, Balance, ShotPower, Jumping, Stamina, Strength, LongShots, Aggression, Interceptions, Positioning, Vision, Penalties, Composure, Marking, StandingTackle, SlidingTackle, GKDiving, GKHandling, GKKicking, GKPositioning, GKReflexes, and Release Clause.
