@@ -67,4 +67,20 @@ The objective of this project was to improve upon image matching by leveraging e
 
 **Description:**
 
-This project focuses on visualizing the Fifa 21 game data and getting inference out of that.Data includes latest edition FIFA 2021 players attributes like Age, Nationality, Overall, Potential, Club, Value, Wage, Preferred Foot, International Reputation, Weak Foot, Skill Moves, Work Rate, Position, Jersey Number, Joined, Loaned From, Contract Valid Until, Height, Weight, LS, ST, RS, LW, LF, CF, RF, RW, LAM, CAM, RAM, LM, LCM, CM, RCM, RM, LWB, LDM, CDM, RDM, RWB, LB, LCB, CB, RCB, RB, Crossing, Finishing, Heading, Accuracy, ShortPassing, Volleys, Dribbling, Curve, FKAccuracy, LongPassing, BallControl, Acceleration, SprintSpeed, Agility, Reactions, Balance, ShotPower, Jumping, Stamina, Strength, LongShots, Aggression, Interceptions, Positioning, Vision, Penalties, Composure, Marking, StandingTackle, SlidingTackle, GKDiving, GKHandling, GKKicking, GKPositioning, GKReflexes, and Release Clause.
+This project focuses on visualizing the Fifa 21 game data and getting inference out of that.Data includes latest edition FIFA 2021 players attributes like Age, Nationality, Overall, Potential, Club, Value, Wage, Preferred Foot, International Reputation, Weak Foot, Skill Moves, Work Rate, Position, Jersey Number, Joined, Loaned From, Contract Valid Until, Height, Weight etc.
+
+### Zomato food data analysis
+[![View on Github](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Zomato_Food_EDA)
+
+**Description**
+
+This project focuses on visualizing the Zomato food data and getting inference out of it both using R and Python.
+
+## Statistical Data Analysis
+
+### Linear Discriminant Analysis of a Bankruptcy Dataset
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Bankruptcy_LDA)
+
+**Description**
+
+This project majorly focuses on statistical data analysis(**LDA**) of a bankruptcy data.
