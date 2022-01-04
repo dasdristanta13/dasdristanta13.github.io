@@ -5,6 +5,7 @@
 ## **Machine Learning**
 
 ### 2.5D Visual Sound:
+
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/2.5D-Visual-Sound)
 
 
@@ -16,7 +17,8 @@
 
 ## **NLP**
 ### Topic modelling of NLP related github repositories
- [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/NLP_work/tree/main/Topic_modelling)
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/NLP_work/tree/main/Topic_modelling)
 
 
 **Description:** 
@@ -27,7 +29,8 @@ NLP libraries are being used</div>
 
 
 ### Resume Analysis with Spacy
- [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/NLP_work/tree/main/Resume_Analysis)
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/NLP_work/tree/main/Resume_Analysis)
 
 
 **Description:** 
