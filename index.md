@@ -80,3 +80,7 @@ This project focuses on visualizing the Fifa 21 game data and getting inference 
 This project focuses on visualizing the Zomato food data and getting inference out of it both using R and Python.
 
 <center><img src="images/zomato.png?raw=true"/></center>
+
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
