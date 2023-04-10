@@ -27,6 +27,7 @@ then used spaCy and other NLP libraries to analyze the GitHub
 descriptions. In this way, we can attempt to get a sense of how.
 NLP libraries are being used</div>
 
+<center><img src="images/Topic_modelling.png?raw=true"/></center>
 
 ### Resume Analysis with Spacy
 
@@ -41,12 +42,14 @@ NLP libraries are being used</div>
 
 ## Statistical Data Analysis
 
- ### Linear Discriminant Analysis of a Bankruptcy Dataset
+### Linear Discriminant Analysis of a Bankruptcy Dataset
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Bankruptcy_LDA)
 
 **Description**
 
 This project majorly focuses on statistical data analysis(**LDA**) of a bankruptcy data.
+
+<center><img src="images/Rplot4.png?raw=true"/></center>
 
 ## Time Series Forecasting and Survival Analysis
 
@@ -56,6 +59,7 @@ This project majorly focuses on statistical data analysis(**LDA**) of a bankrupt
 **Description**
 This repository contains **Time Series Forecasting** of **Nifty 50, Dax , Dow Jones** and **Nikkei** stock prices
 
+<center><img src="images/Nifty_Forecast.png?raw=true"/></center>
 
 ## Exploratory Data Analysis
 
@@ -66,6 +70,8 @@ This repository contains **Time Series Forecasting** of **Nifty 50, Dax , Dow Jo
 
 This project focuses on visualizing the Fifa 21 game data and getting inference out of that.Data includes latest edition FIFA 2021 players attributes like Age, Nationality, Overall, Potential, Club, Value, Wage, Preferred Foot, International Reputation, Weak Foot, Skill Moves, Work Rate, Position, Jersey Number, Joined, Loaned From, Contract Valid Until, Height, Weight etc.
 
+<center><img src="images/football.png?raw=true"/></center>
+
 ### Zomato food data analysis
 [![View on Github](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Zomato_Food_EDA)
 
@@ -73,3 +79,4 @@ This project focuses on visualizing the Fifa 21 game data and getting inference 
 
 This project focuses on visualizing the Zomato food data and getting inference out of it both using R and Python.
 
+<center><img src="images/zomato.png?raw=true"/></center>
