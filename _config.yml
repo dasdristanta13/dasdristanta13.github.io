@@ -2,9 +2,6 @@ title: <p align="center"> Dristanta Das </p>
 
 logo: "/images/logo.png?raw=true"
 
-kramdown:
-  input: Kramdown
-
 description:
   <p align="center">
   <a href="pdf/dristanta_resume.pdf">Resume</a> |
