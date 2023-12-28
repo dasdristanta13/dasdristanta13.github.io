@@ -64,7 +64,7 @@ This repository contains **Time Series Forecasting** of **Nifty 50, Dax , Dow Jo
 ## Exploratory Data Analysis
 
 ### Fifa 21 game data analysis
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Fifa21EDA)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dasdristanta13/Fifa21EDA/blob/main/README.md)
 
 **Description:**
 
