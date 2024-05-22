@@ -4,13 +4,13 @@ logo: "/images/logo.jpg?raw=true"
 
 description:
   <p align="center">
-  <a href="pdf/dristanta_resume.pdf">Resume</a> |
+  <a href="pdf/Dristanta_Das_Data_Scientist_Resume.pdf">Resume</a> |
   <a href="https://www.linkedin.com/in/dasdristanta13/">LinkedIn</a> |
   <a href="https://github.com/dasdristanta13">GitHub</a>
   </p>
   
   <p align="justify">
-  Hi, I'm Dristanta Das, a Junior Data Scientist working at Abzooba. I hold an M.Sc. degree in Big Data Analytics from RKMVERI and a B.Sc. degree in Mathematics from Presidency University.I have specialized in Computer Vision and Audio in Deep Learning. Currently, I am focusing on Natural Language Processing (NLP). I am passionate about exploring and applying cutting-edge techniques to solve complex data problems.
+  Hi, I'm Dristanta Das, a Associate Data Scientist working at UST. I am passionate about exploring and applying cutting-edge techniques to solve complex data problems.
   </p>
   
 theme: jekyll-theme-minimal
