@@ -1,4 +1,9 @@
 ---
 ---
 
-@import "jekyll-theme-minimal";
+@import "{{ site.theme }}";
+
+.wrapper img {
+  max-width: 150px !important;
+  border-radius: 50%;
+}
