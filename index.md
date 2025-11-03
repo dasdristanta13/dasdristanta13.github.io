@@ -4,261 +4,242 @@ layout: default
 
 <style>
     body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         line-height: 1.6;
-        color: #2d3748;
+        color: #333;
     }
 
-    /* Hero Section */
+    /* Hero */
     .hero {
         text-align: center;
-        padding: 60px 20px;
-        margin-bottom: 60px;
+        padding: 40px 20px;
+        margin-bottom: 50px;
     }
 
     .hero h1 {
-        font-size: 2.5em;
-        font-weight: 700;
-        margin-bottom: 10px;
-        color: #1a202c;
+        font-size: 2.2em;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #000;
     }
 
     .hero .tagline {
-        font-size: 1.3em;
-        color: #667eea;
-        font-weight: 500;
-        margin-bottom: 15px;
+        font-size: 1.1em;
+        color: #666;
+        margin-bottom: 8px;
     }
 
     .hero .subtitle {
-        font-size: 1.05em;
-        color: #4a5568;
-        max-width: 600px;
-        margin: 0 auto;
+        font-size: 0.95em;
+        color: #888;
     }
 
-    /* Stats Grid */
+    /* Stats */
     .stats {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
-        margin: 50px 0;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin: 40px 0 50px 0;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .stat-item {
         text-align: center;
-        padding: 25px;
-        background: #f7fafc;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-    }
-
-    .stat-item:hover {
-        transform: translateY(-5px);
+        padding: 20px 10px;
+        background: #f8f9fa;
+        border-radius: 6px;
     }
 
     .stat-number {
-        font-size: 2em;
-        font-weight: 700;
-        color: #667eea;
+        font-size: 1.8em;
+        font-weight: 600;
+        color: #000;
         display: block;
     }
 
     .stat-label {
-        font-size: 0.9em;
-        color: #718096;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        margin-top: 5px;
+        font-size: 0.85em;
+        color: #666;
+        margin-top: 3px;
     }
 
-    /* Section Titles */
+    /* Sections */
     h2 {
-        font-size: 1.8em;
-        color: #1a202c;
-        margin: 60px 0 30px 0;
-        font-weight: 700;
-        border-bottom: 3px solid #667eea;
-        padding-bottom: 10px;
+        font-size: 1.5em;
+        color: #000;
+        margin: 50px 0 20px 0;
+        font-weight: 600;
+        border-bottom: 2px solid #000;
+        padding-bottom: 8px;
     }
 
-    /* Experience Cards */
+    /* Experience */
     .experience-item {
-        margin-bottom: 40px;
-        padding: 25px;
-        background: #ffffff;
-        border-left: 4px solid #667eea;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .experience-item:last-child {
+        border-bottom: none;
     }
 
     .experience-header {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 10px;
+        align-items: baseline;
+        margin-bottom: 8px;
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .experience-item h3 {
-        font-size: 1.4em;
-        color: #1a202c;
+        font-size: 1.2em;
+        color: #000;
         margin: 0;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     .company-location {
-        color: #718096;
+        color: #888;
         font-size: 0.9em;
     }
 
     .period {
-        color: #667eea;
-        font-weight: 600;
+        color: #666;
         font-size: 0.9em;
+        font-weight: 500;
     }
 
     .role {
-        font-size: 1.1em;
-        color: #4a5568;
-        font-weight: 600;
-        margin: 15px 0;
-        font-style: italic;
+        font-size: 1em;
+        color: #444;
+        font-weight: 500;
+        margin: 10px 0;
     }
 
     .experience-item ul {
-        margin: 15px 0 0 0;
-        padding-left: 20px;
+        margin: 10px 0 0 0;
+        padding-left: 18px;
     }
 
     .experience-item li {
-        color: #4a5568;
-        margin-bottom: 10px;
-        line-height: 1.7;
+        color: #555;
+        margin-bottom: 8px;
+        line-height: 1.6;
+        font-size: 0.95em;
     }
 
-    /* Skills Grid */
+    /* Skills */
     .skills-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
         margin-top: 20px;
     }
 
     .skill-box {
-        padding: 20px;
-        background: #f7fafc;
-        border-radius: 8px;
-        border-left: 4px solid #667eea;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 6px;
     }
 
     .skill-box h3 {
-        font-size: 1.1em;
-        color: #667eea;
-        margin: 0 0 10px 0;
-        font-weight: 700;
+        font-size: 1em;
+        color: #000;
+        margin: 0 0 8px 0;
+        font-weight: 600;
     }
 
     .skill-box p {
-        color: #4a5568;
-        line-height: 1.6;
+        color: #666;
+        line-height: 1.5;
         margin: 0;
-        font-size: 0.95em;
+        font-size: 0.9em;
     }
 
-    /* Project Cards */
+    /* Projects */
     .project {
-        margin-bottom: 35px;
-        padding: 25px;
-        background: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s ease;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e0e0e0;
     }
 
-    .project:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    .project:last-child {
+        border-bottom: none;
     }
 
     .project-header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-bottom: 15px;
+        align-items: baseline;
+        margin-bottom: 12px;
         flex-wrap: wrap;
         gap: 10px;
     }
 
     .project h3 {
-        font-size: 1.3em;
-        color: #1a202c;
+        font-size: 1.15em;
+        color: #000;
         margin: 0;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     .github-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        background: #24292e;
-        color: white !important;
-        padding: 8px 16px;
-        border-radius: 6px;
+        color: #666 !important;
         text-decoration: none;
         font-size: 0.9em;
-        font-weight: 600;
-        transition: all 0.3s ease;
+        font-weight: 500;
+        transition: color 0.2s;
     }
 
     .github-link:hover {
-        background: #667eea;
+        color: #000 !important;
     }
 
     .tags {
-        margin: 10px 0 15px 0;
+        margin: 8px 0 12px 0;
     }
 
     .tag {
         display: inline-block;
-        background: #e6f0ff;
-        color: #667eea;
-        padding: 5px 12px;
-        border-radius: 15px;
-        font-size: 0.85em;
-        font-weight: 600;
+        color: #666;
+        padding: 3px 10px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        font-size: 0.8em;
         margin: 3px 5px 3px 0;
     }
 
     .project-description {
-        color: #4a5568;
-        line-height: 1.7;
+        color: #555;
+        line-height: 1.6;
         margin-bottom: 15px;
+        font-size: 0.95em;
     }
 
     .project-image {
         width: 100%;
-        border-radius: 8px;
+        border-radius: 4px;
         margin-top: 15px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0e0e0;
     }
 
     /* Responsive */
     @media (max-width: 768px) {
         .hero h1 {
-            font-size: 2em;
-        }
-
-        .hero .tagline {
-            font-size: 1.1em;
+            font-size: 1.8em;
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
 
         .stats {
             grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
         }
 
         .skills-grid {
@@ -276,13 +257,13 @@ layout: default
 <div class="hero">
     <h1>Dristanta Das</h1>
     <div class="tagline">Data Science & Machine Learning Engineer</div>
-    <div class="subtitle">Transforming data into actionable insights with AI and advanced analytics</div>
+    <div class="subtitle">Transforming data into actionable insights</div>
 </div>
 
 <div class="stats">
     <div class="stat-item">
         <span class="stat-number">3+</span>
-        <span class="stat-label">Years Experience</span>
+        <span class="stat-label">Years</span>
     </div>
     <div class="stat-item">
         <span class="stat-number">12+</span>
@@ -290,7 +271,7 @@ layout: default
     </div>
     <div class="stat-item">
         <span class="stat-number">10+</span>
-        <span class="stat-label">Technologies</span>
+        <span class="stat-label">Tech Stack</span>
     </div>
     <div class="stat-item">
         <span class="stat-number">∞</span>
@@ -310,10 +291,10 @@ layout: default
     </div>
     <div class="role">Assistant Manager - Data Science</div>
     <ul>
-        <li>Architected end-to-end <strong>Text-to-SQL system</strong> using <strong>LangChain</strong> and <strong>LangGraph</strong> for 50+ beta users, reducing query creation time by <strong>65%</strong></li>
-        <li>Engineered automated <strong>invoice processing pipeline</strong> with LLMs, achieving <strong>85%+ accuracy</strong> across 10,000+ invoices</li>
-        <li>Built robust <strong>agentic workflows</strong> with <strong>92% task completion rate</strong> across LLM-powered applications</li>
-        <li>Led integration of LLM solutions with cross-functional teams, scaling to handle <strong>500+ daily queries</strong></li>
+        <li>Architected end-to-end Text-to-SQL system using LangChain and LangGraph for 50+ users, reducing query creation time by 65%</li>
+        <li>Engineered automated invoice processing pipeline with LLMs, achieving 85%+ accuracy across 10,000+ invoices</li>
+        <li>Built agentic workflows with 92% task completion rate across LLM-powered applications</li>
+        <li>Led integration of LLM solutions with cross-functional teams, scaling to 500+ daily queries</li>
     </ul>
 </div>
 
@@ -327,13 +308,13 @@ layout: default
     </div>
     <div class="role">Associate III Data Scientist (Oct 2022 – Mar 2025)</div>
     <ul>
-        <li>Developed provider search system using <strong>advanced NLP</strong> and <strong>LLMs</strong>, boosting search efficiency by <strong>30%</strong></li>
-        <li>Implemented <strong>NER</strong> and <strong>semantic search</strong> for medical term retrieval, achieving <strong>25%</strong> efficiency enhancement</li>
+        <li>Developed provider search system using advanced NLP and LLMs, boosting search efficiency by 30%</li>
+        <li>Implemented NER and semantic search for medical term retrieval, achieving 25% efficiency enhancement</li>
     </ul>
     <div class="role">Associate II Data Scientist (Jul 2022 – Sept 2022)</div>
     <ul>
-        <li>Evaluated patient data using <strong>BigQuery</strong>, improving client understanding by <strong>45%</strong> for 10,000+ patients</li>
-        <li>Designed data anomaly detection system adhering to <strong>HIPAA</strong> and <strong>GDPR</strong> compliance</li>
+        <li>Evaluated patient data using BigQuery, improving client understanding by 45% for 10,000+ patients</li>
+        <li>Designed data anomaly detection system adhering to HIPAA and GDPR compliance</li>
     </ul>
 </div>
 
@@ -358,12 +339,12 @@ layout: default
     </div>
 </div>
 
-<h2>Featured Projects</h2>
+<h2>Projects</h2>
 
 <div class="project">
     <div class="project-header">
         <h3>RAG QA Bot</h3>
-        <a href="https://github.com/dasdristanta13/RAG-ai-bot" class="github-link" target="_blank">→ GitHub</a>
+        <a href="https://github.com/dasdristanta13/RAG-ai-bot" class="github-link" target="_blank">GitHub →</a>
     </div>
     <div class="tags">
         <span class="tag">RAG</span>
@@ -380,7 +361,7 @@ layout: default
 <div class="project">
     <div class="project-header">
         <h3>2.5D Visual Sound</h3>
-        <a href="https://github.com/dasdristanta13/2.5D-Visual-Sound" class="github-link" target="_blank">→ GitHub</a>
+        <a href="https://github.com/dasdristanta13/2.5D-Visual-Sound" class="github-link" target="_blank">GitHub →</a>
     </div>
     <div class="tags">
         <span class="tag">Audio Processing</span>
@@ -396,7 +377,7 @@ layout: default
 <div class="project">
     <div class="project-header">
         <h3>Topic Modelling of NLP Repositories</h3>
-        <a href="https://github.com/dasdristanta13/NLP_work/tree/main/Topic_modelling" class="github-link" target="_blank">→ GitHub</a>
+        <a href="https://github.com/dasdristanta13/NLP_work/tree/main/Topic_modelling" class="github-link" target="_blank">GitHub →</a>
     </div>
     <div class="tags">
         <span class="tag">Topic Modeling</span>
@@ -412,7 +393,7 @@ layout: default
 <div class="project">
     <div class="project-header">
         <h3>Resume Analysis with Spacy</h3>
-        <a href="https://github.com/dasdristanta13/NLP_work/tree/main/Resume_Analysis" class="github-link" target="_blank">→ GitHub</a>
+        <a href="https://github.com/dasdristanta13/NLP_work/tree/main/Resume_Analysis" class="github-link" target="_blank">GitHub →</a>
     </div>
     <div class="tags">
         <span class="tag">NLP</span>
@@ -427,7 +408,7 @@ layout: default
 <div class="project">
     <div class="project-header">
         <h3>Bankruptcy Prediction with LDA</h3>
-        <a href="https://github.com/dasdristanta13/Bankruptcy_LDA" class="github-link" target="_blank">→ GitHub</a>
+        <a href="https://github.com/dasdristanta13/Bankruptcy_LDA" class="github-link" target="_blank">GitHub →</a>
     </div>
     <div class="tags">
         <span class="tag">LDA</span>
@@ -443,7 +424,7 @@ layout: default
 <div class="project">
     <div class="project-header">
         <h3>Financial Time Series Forecasting</h3>
-        <a href="https://github.com/dasdristanta13/Time-series" class="github-link" target="_blank">→ GitHub</a>
+        <a href="https://github.com/dasdristanta13/Time-series" class="github-link" target="_blank">GitHub →</a>
     </div>
     <div class="tags">
         <span class="tag">Time Series</span>
@@ -459,7 +440,7 @@ layout: default
 <div class="project">
     <div class="project-header">
         <h3>FIFA 21 Data Analysis</h3>
-        <a href="https://github.com/dasdristanta13/Fifa21EDA/blob/main/README.md" class="github-link" target="_blank">→ GitHub</a>
+        <a href="https://github.com/dasdristanta13/Fifa21EDA/blob/main/README.md" class="github-link" target="_blank">GitHub →</a>
     </div>
     <div class="tags">
         <span class="tag">EDA</span>
@@ -475,7 +456,7 @@ layout: default
 <div class="project">
     <div class="project-header">
         <h3>Zomato Food Data Analysis</h3>
-        <a href="https://github.com/dasdristanta13/Zomato_Food_EDA" class="github-link" target="_blank">→ GitHub</a>
+        <a href="https://github.com/dasdristanta13/Zomato_Food_EDA" class="github-link" target="_blank">GitHub →</a>
     </div>
     <div class="tags">
         <span class="tag">Data Visualization</span>
