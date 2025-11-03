@@ -2,13 +2,16 @@
 title: Dristanta Das
 logo: "/images/logo.jpg?raw=true"
 description: >
+  <p style="text-align: center;">
   <a href="pdf/Dristanta_Das_Data_Scientist_Resume.pdf" target="_blank">Resume</a> | 
   <a href="https://www.linkedin.com/in/dasdristanta13/" target="_blank">LinkedIn</a> | 
   <a href="https://github.com/dasdristanta13" target="_blank">GitHub</a>
-  <br><br>
+  </p>
+  <p style="text-align: center;">
   Hi, I'm Dristanta Das, an Associate Data Scientist at UST. 
   I am passionate about exploring and applying cutting-edge techniques 
   to solve complex data problems.
+  </p>
 
 # Theme
 theme: jekyll-theme-minimal
