@@ -152,6 +152,96 @@ layout: default
         width: 100%;
     }
 
+    /* Experience section */
+    .experience-card {
+        background: white;
+        border-radius: 20px;
+        padding: 35px;
+        margin-bottom: 35px;
+        border: 2px solid #e2e8f0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+
+    .experience-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .experience-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(102, 126, 234, 0.2);
+        border-color: #667eea;
+    }
+
+    .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .company-info h3 {
+        font-size: 1.8em;
+        color: #1a202c;
+        margin: 0 0 5px 0;
+        font-weight: 700;
+    }
+
+    .company-location {
+        color: #718096;
+        font-size: 0.95em;
+        font-weight: 500;
+    }
+
+    .experience-period {
+        color: #667eea;
+        font-weight: 600;
+        font-size: 0.95em;
+        white-space: nowrap;
+    }
+
+    .job-title {
+        font-size: 1.2em;
+        color: #4a5568;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+
+    .experience-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .experience-card li {
+        color: #4a5568;
+        font-size: 1.05em;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        padding-left: 30px;
+        position: relative;
+    }
+
+    .experience-card li::before {
+        content: '▸';
+        position: absolute;
+        left: 10px;
+        color: #667eea;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+
     /* Enhanced project cards */
     .project-card {
         background: white;
@@ -310,6 +400,41 @@ layout: default
         vertical-align: middle;
     }
 
+    /* Skills section */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .skill-category {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        border: 2px solid #e2e8f0;
+        transition: all 0.3s ease;
+    }
+
+    .skill-category:hover {
+        border-color: #667eea;
+        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+        transform: translateY(-5px);
+    }
+
+    .skill-category h4 {
+        color: #667eea;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .skill-category p {
+        color: #4a5568;
+        line-height: 1.8;
+        margin: 0;
+    }
+
     /* Responsive design */
     @media (max-width: 768px) {
         .portfolio-hero {
@@ -334,7 +459,7 @@ layout: default
             font-size: 1.9em;
         }
 
-        .project-card {
+        .project-card, .experience-card {
             padding: 25px;
         }
 
@@ -342,13 +467,21 @@ layout: default
             font-size: 1.4em;
         }
 
-        .project-header {
+        .project-header, .experience-header {
             flex-direction: column;
             align-items: flex-start;
         }
 
         .category-icon {
             font-size: 1.5em;
+        }
+
+        .company-info h3 {
+            font-size: 1.5em;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr;
         }
     }
 
@@ -371,16 +504,20 @@ layout: default
 <div class="portfolio-hero">
     <h1>🚀 Portfolio</h1>
     <div class="tagline">Data Science & Machine Learning Engineer</div>
-    <div class="subtitle">Transforming Data into Actionable Insights</div>
+    <div class="subtitle">Transforming Data into Actionable Insights with AI</div>
 </div>
 
 <div class="stats-section">
     <div class="stat-card">
-        <span class="stat-number">10+</span>
+        <span class="stat-number">3+</span>
+        <span class="stat-label">Years Experience</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-number">12+</span>
         <span class="stat-label">Projects</span>
     </div>
     <div class="stat-card">
-        <span class="stat-number">5+</span>
+        <span class="stat-number">10+</span>
         <span class="stat-label">Technologies</span>
     </div>
     <div class="stat-card">
@@ -390,8 +527,89 @@ layout: default
 </div>
 
 <section class="section">
-    <h2 class="section-title"><span class="category-icon">🤖</span>Machine Learning</h2>
+    <h2 class="section-title"><span class="category-icon">💼</span>Professional Experience</h2>
     
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="company-info">
+                <h3>Genpact</h3>
+                <div class="company-location">Bengaluru, Karnataka</div>
+            </div>
+            <div class="experience-period">Apr 2025 – Present</div>
+        </div>
+        <div class="job-title">Assistant Manager - Data Science</div>
+        <ul>
+            <li>Architected and deployed an end-to-end <strong>Text-to-SQL system</strong> using <strong>LangChain</strong> and <strong>LangGraph</strong> for <strong>50+ beta users</strong>, supporting <strong>10 concurrent users</strong> and enabling natural language querying of complex databases, reducing query creation time by <strong>65%</strong>.</li>
+            <li>Engineered an automated <strong>invoice processing pipeline</strong> leveraging <strong>LLMs</strong> for document parsing and information extraction, achieving <strong>85%+ accuracy</strong> across <strong>10,000+ invoices</strong> and reducing manual processing time by <strong>60%</strong>.</li>
+            <li>Built robust <strong>agentic workflows</strong> with state management, error handling, and dynamic routing capabilities, achieving <strong>92% task completion rate</strong> and delivering superior user experience across LLM-powered applications.</li>
+            <li>Spearheaded integration of LLM-powered solutions into production systems with cross-functional teams of <strong>12+ members</strong>, ensuring scalability to handle <strong>500+ daily queries</strong> and alignment with business requirements.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="company-info">
+                <h3>UST</h3>
+                <div class="company-location">Kolkata, West Bengal</div>
+            </div>
+            <div class="experience-period">Jul 2022 – Mar 2025</div>
+        </div>
+        <div class="job-title">Associate III Data Scientist (Oct 2022 – Mar 2025)</div>
+        <ul>
+            <li>Orchestrated development of a client-facing provider search system using <strong>advanced NLP techniques</strong> and open-source <strong>LLMs</strong>, boosting search efficiency by <strong>30%</strong> and accelerating data preparation tasks by <strong>40%</strong>.</li>
+            <li>Implemented <strong>NER</strong> and <strong>semantic search</strong> capabilities for retrieving medical terms from layperson language, achieving <strong>25%</strong> enhancement in operational efficiency and improving service quality for end-users.</li>
+        </ul>
+        <div class="job-title">Associate II Data Scientist (Jul 2022 – Sept 2022)</div>
+        <ul>
+            <li>Conducted evaluation of patient data using <strong>BigQuery</strong> with comprehensive data transformations and statistical analysis, enhancing client understanding of adherence drivers by <strong>45%</strong> and improving outreach to over <strong>10,000 patients</strong>.</li>
+            <li>Designed and implemented a data anomaly detection system for categorical healthcare data, adhering to <strong>HIPAA</strong> and <strong>GDPR</strong> compliance standards.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title"><span class="category-icon">🛠️</span>Technical Skills</h2>
+    
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h4>AI/ML</h4>
+            <p>Natural Language Processing (NLP), Large Language Models (LLMs), Named Entity Recognition (NER), Retrieval-Augmented Generation (RAG), Machine Learning, Deep Learning, Statistical & Predictive Modeling</p>
+        </div>
+        <div class="skill-category">
+            <h4>Frameworks & Libraries</h4>
+            <p>LangChain, LangGraph, PyTorch, Hugging Face Transformers, Scikit-learn, XGBoost, FastAPI, Spacy</p>
+        </div>
+        <div class="skill-category">
+            <h4>Tools & Cloud</h4>
+            <p>Python, R, SQL, Git (GitHub, GitLab, Bitbucket), Docker, BigQuery, Vector Databases, AWS, Azure, VS Code</p>
+        </div>
+        <div class="skill-category">
+            <h4>Design & Compliance</h4>
+            <p>High-Level Architecture Design, Data Flow Modeling, UML Diagrams, Anomaly Detection, HIPAA & GDPR Compliance</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title"><span class="category-icon">🤖</span>AI & LLM Projects</h2>
+    
+    <div class="project-card">
+        <div class="project-header">
+            <h3 class="project-title">Retrieval-Augmented Generation (RAG) QA Bot</h3>
+            <a href="https://github.com/dasdristanta13/RAG-ai-bot" class="github-badge" target="_blank">View on GitHub</a>
+        </div>
+        <div>
+            <span class="label">RAG</span>
+            <span class="label">LangChain</span>
+            <span class="label">BM25</span>
+            <span class="label">DPR</span>
+            <span class="label">LLMs</span>
+        </div>
+        <div class="project-description">
+            Engineered a Python-based QA bot with hybrid retrieval using BM25 and DPR, achieving 40% higher answer accuracy compared to traditional search methods. Integrated GPT-3.5-turbo, Phi-2, and Llama3 with contextual compression to reduce hallucinations by 60%; optimized performance using SQLite caching and Slack integration.
+        </div>
+    </div>
+
     <div class="project-card">
         <div class="project-header">
             <h3 class="project-title">2.5D Visual Sound</h3>
