@@ -1,31 +1,49 @@
+# ──────────────────────────────────────────────
 # Site Settings
-title: Dristanta Das
-logo: "/images/logo.jpg?raw=true"
+# ──────────────────────────────────────────────
+title: "Dristanta Das"
+logo: "/images/logo.jpg"
 description: >
-  <p style="text-align: center;">
-  <a href="pdf/Dristanta_Das_Data_Scientist_Resume.pdf" target="_blank">Resume</a> | 
-  <a href="https://www.linkedin.com/in/dasdristanta13/" target="_blank">LinkedIn</a> | 
-  <a href="https://github.com/dasdristanta13" target="_blank">GitHub</a>
-  </p>
-  <p style="text-align: center;">
-  Hi, I'm Dristanta Das, an Assistant Manager – Data Science at Genpact, specializing in LLM-based systems, NLP, and AI automation. 
-  I design and deploy scalable Text-to-SQL, RAG, and agentic AI solutions using frameworks like LangChain, LangGraph, and PyTorch. 
-  Previously at UST, I developed NLP-driven search and anomaly detection systems that improved operational efficiency and data reliability. 
-  My focus lies in building robust, production-ready AI solutions that drive measurable business impact.
-  </p>
+  <div align="center">
+    <p>
+      <a href="pdf/Dristanta_Das_Data_Scientist_Resume.pdf" target="_blank">Resume</a> · 
+      <a href="https://www.linkedin.com/in/dasdristanta13/" target="_blank">LinkedIn</a> · 
+      <a href="https://github.com/dasdristanta13" target="_blank">GitHub</a>
+    </p>
+    <p>
+      Hi, I'm <strong>Dristanta Das</strong>, an <strong>Assistant Manager – Data Science at Genpact</strong>, 
+      specializing in <strong>LLM-based systems</strong>, <strong>NLP</strong>, and <strong>AI automation</strong>. 
+      I design and deploy scalable <strong>Text-to-SQL</strong>, <strong>RAG</strong>, and <strong>agentic AI</strong> 
+      solutions using frameworks like <strong>LangChain</strong>, <strong>LangGraph</strong>, and <strong>PyTorch</strong>. 
+      Previously at <strong>UST</strong>, I developed NLP-driven search and anomaly detection systems that improved 
+      operational efficiency and data reliability. My focus lies in building robust, production-ready AI solutions 
+      that drive measurable business impact.
+    </p>
+  </div>
 
+# ──────────────────────────────────────────────
 # Theme
+# ──────────────────────────────────────────────
 theme: jekyll-theme-minimal
-
-# Analytics
-google_analytics: UA-000000-0
-
-# Optional: Additional Settings
 show_downloads: false
 
-# Social Links (if supported by theme)
+# ──────────────────────────────────────────────
+# Social Links (supported by many Jekyll themes)
+# ──────────────────────────────────────────────
 github_username: dasdristanta13
 linkedin_username: dasdristanta13
+email: dasdristanta13@gmail.com
 
-# SEO
-author: Dristanta Das
+# ──────────────────────────────────────────────
+# SEO / Metadata
+# ──────────────────────────────────────────────
+author: "Dristanta Das"
+url: "https://dasdristanta13.github.io"        # replace with your actual GitHub Pages URL
+baseurl: ""                                    # keep empty unless using a subpath
+lang: "en"
+keywords: "Data Science, NLP, LLMs, LangChain, LangGraph, RAG, Genpact, Python, AI Engineer"
+social:
+  name: "Dristanta Das"
+  links:
+    - "https://www.linkedin.com/in/dasdristanta13/"
+    - "https://github.com/dasdristanta13"
