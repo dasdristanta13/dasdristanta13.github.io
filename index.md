@@ -39,9 +39,10 @@ layout: default
 
     /* Hero */
     .hero {
-        text-align: center;
-        padding: 20px 20px 40px;
-        margin-bottom: 40px;
+        text-align: left;
+        padding: 0 0 22px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--line);
     }
 
     .hero .kicker {
@@ -51,27 +52,20 @@ layout: default
         letter-spacing: .18em;
         text-transform: uppercase;
         color: var(--c2i);
-        margin-bottom: 10px;
-    }
-
-    .hero h1 {
-        font-size: 2.2em;
-        font-weight: 700;
-        letter-spacing: -.01em;
         margin-bottom: 8px;
-        color: var(--ink);
     }
 
     .hero .tagline {
-        font-size: 1.1em;
-        color: var(--ink-2);
-        margin-bottom: 8px;
-        font-weight: 500;
+        font-size: 1.25em;
+        color: var(--ink);
+        margin-bottom: 6px;
+        font-weight: 600;
     }
 
     .hero .subtitle {
         font-size: 0.95em;
         color: var(--muted);
+        max-width: 640px;
     }
 
     /* Stats */
@@ -79,15 +73,13 @@ layout: default
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 15px;
-        margin: 40px 0 50px 0;
-        max-width: 760px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin: 0 0 50px 0;
     }
 
     .stat-item {
-        text-align: center;
-        padding: 18px 10px;
+        text-align: left;
+        padding: 16px 16px;
         background: var(--card);
         border: 1px solid var(--line);
         border-top: 3px solid var(--c);
@@ -341,8 +333,8 @@ layout: default
 
     /* Responsive */
     @media (max-width: 768px) {
-        .hero h1 {
-            font-size: 1.8em;
+        .hero .tagline {
+            font-size: 1.1em;
         }
 
         h2 {
@@ -374,7 +366,6 @@ layout: default
 
 <div class="hero">
     <div class="kicker">Senior Data Scientist &middot; GenAI &amp; Agentic Systems</div>
-    <h1>Dristanta Das</h1>
     <div class="tagline">Building production NLP, search &amp; agentic GenAI systems</div>
     <div class="subtitle">Turning slow, manual, human-in-the-middle workflows into governed, self-service ones</div>
 </div>
