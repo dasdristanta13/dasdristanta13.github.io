@@ -3,38 +3,19 @@
 # ──────────────────────────────────────────────
 title: "Dristanta Das"
 logo: "/images/logo.jpg"
-description: >
-  <div align="center" style="font-family:'IBM Plex Sans',-apple-system,'Segoe UI',sans-serif;">
-    <div style="font-family:'IBM Plex Mono','Cascadia Mono',Consolas,monospace;font-size:0.78em;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#6D28D9;margin-bottom:8px;">
-      Senior Data Scientist &middot; GenAI &amp; Agentic Systems
-    </div>
-    <div style="font-size:1.05em;font-weight:600;color:#0A2342;margin-bottom:4px;">
-      Building production NLP, search &amp; agentic GenAI systems
-    </div>
-    <div style="font-size:0.85em;color:#5D6E85;margin-bottom:14px;">
-      Turning slow, manual, human-in-the-middle workflows into governed, self-service ones
-    </div>
-    <p style="margin-bottom:14px;">
-      <a href="pdf/Dristanta_Das_Senior_Data_Scientist.pdf" target="_blank" style="display:inline-block;font-family:'IBM Plex Mono',Consolas,monospace;font-size:0.85em;font-weight:600;color:#1D4ED8;background:#EFF4FF;border:1px solid #D9E1EC;border-radius:5px;padding:5px 12px;margin:3px;text-decoration:none;">Resume</a>
-      <a href="https://www.linkedin.com/in/dasdristanta13/" target="_blank" style="display:inline-block;font-family:'IBM Plex Mono',Consolas,monospace;font-size:0.85em;font-weight:600;color:#173F84;background:#EDF2FB;border:1px solid #D9E1EC;border-radius:5px;padding:5px 12px;margin:3px;text-decoration:none;">LinkedIn</a>
-      <a href="https://github.com/dasdristanta13" target="_blank" style="display:inline-block;font-family:'IBM Plex Mono',Consolas,monospace;font-size:0.85em;font-weight:600;color:#0B6E78;background:#E6F4F6;border:1px solid #D9E1EC;border-radius:5px;padding:5px 12px;margin:3px;text-decoration:none;">GitHub</a>
-    </p>
-    <p style="color:#1E3F66;line-height:1.6;max-width:680px;margin:0 auto;">
-      Hi, I'm <strong>Dristanta Das</strong>, a <strong>Senior Data Scientist at Genpact</strong>,
-      specializing in <strong>agentic GenAI systems</strong>, <strong>NLP</strong>, and <strong>AI automation</strong>.
-      I design and deploy scalable <strong>Text-to-SQL</strong>, <strong>RAG</strong>, and <strong>agentic AI</strong>
-      solutions using frameworks like <strong>LangChain</strong>, <strong>LangGraph</strong>, and <strong>PyTorch</strong>.
-      Previously at <strong>UST</strong>, I built a client-facing <strong>provider search system</strong> using NER
-      and semantic search, boosting search efficiency by 30% and remaining my most-cited career win. My focus lies
-      in building robust, production-ready AI solutions that drive measurable business impact.
-    </p>
-  </div>
+description: "Senior Data Scientist building production agentic GenAI, NLP and search systems: Text-to-SQL, RAG and document pipelines."
 
 # ──────────────────────────────────────────────
-# Theme
+# Layout (custom, no remote theme; see _layouts/default.html and assets/css/site.css)
 # ──────────────────────────────────────────────
-theme: jekyll-theme-minimal
-show_downloads: false
+plugins:
+  - jekyll-seo-tag
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - skills-lock.json
+  - renovate.json
+  - README.md
 
 # ──────────────────────────────────────────────
 # Social Links (supported by many Jekyll themes)
