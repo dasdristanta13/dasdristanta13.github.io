@@ -64,6 +64,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* When the eased-scroll script is active it drives scrolling itself and applies the header offset. */
+html.smooth { scroll-behavior: auto; scroll-padding-top: 0; }
+
 img { max-width: 100%; display: block; }
 a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
 a:hover { text-decoration-thickness: 2px; }

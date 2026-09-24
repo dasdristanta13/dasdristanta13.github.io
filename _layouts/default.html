@@ -82,5 +82,54 @@
         });
       })();
     </script>
+    <script>
+      /* Eased wheel scrolling, no dependencies. Skipped for reduced motion;
+         touch, keyboard and scrollbar dragging keep native behavior. */
+      (function () {
+        if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        var root = document.documentElement, header = document.querySelector(".site-header");
+        var cur = scrollY, target = cur, raf = 0, EASE = 0.1;
+        root.classList.add("smooth");
+
+        function maxScroll() { return root.scrollHeight - innerHeight; }
+        function clamp(v) { return Math.max(0, Math.min(maxScroll(), v)); }
+        function tick() {
+          cur += (target - cur) * EASE;
+          if (Math.abs(target - cur) < 0.5) { cur = target; raf = 0; } else { raf = requestAnimationFrame(tick); }
+          scrollTo(0, cur);
+        }
+        function go(to) {
+          if (!raf) cur = scrollY;
+          target = clamp(to);
+          if (!raf) raf = requestAnimationFrame(tick);
+        }
+        function stop() { if (raf) cancelAnimationFrame(raf); raf = 0; cur = target = scrollY; }
+
+        addEventListener("wheel", function (e) {
+          if (e.ctrlKey || e.defaultPrevented || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+          var d = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? innerHeight : 1);
+          e.preventDefault();
+          go((raf ? target : scrollY) + d);
+        }, { passive: false });
+
+        /* Native scrolling (scrollbar drag, keyboard): keep our position in sync. */
+        addEventListener("scroll", function () { if (!raf) cur = target = scrollY; }, { passive: true });
+        addEventListener("keydown", function (e) {
+          if ([" ", "PageUp", "PageDown", "Home", "End", "ArrowUp", "ArrowDown"].indexOf(e.key) > -1) stop();
+        });
+        addEventListener("pointerdown", stop);
+        addEventListener("resize", function () { target = clamp(target); });
+
+        document.addEventListener("click", function (e) {
+          var a = e.target.closest && e.target.closest('a[href^="#"]');
+          if (!a || a.getAttribute("href") === "#") return;
+          var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+          if (!el) return;
+          e.preventDefault();
+          go(el.getBoundingClientRect().top + scrollY - (header ? header.offsetHeight : 0));
+          history.pushState(null, "", a.getAttribute("href"));
+        });
+      })();
+    </script>
   </body>
 </html>
