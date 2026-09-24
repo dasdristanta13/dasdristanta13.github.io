@@ -3,20 +3,16 @@
 :root {
   color-scheme: light dark;
 
-  /* Light (also the fallback for browsers without light-dark()).
-     Surface is pure white and neutrals share the accent's hue (210), per
-     Impeccable's seed oklch(0.55 0.09 210): steel blue, patinated instrument. */
-  --bg: oklch(1 0 0);
-  --surface: oklch(0.985 0.002 240);
-  --ink: oklch(0.19 0.012 240);
-  --body: oklch(0.35 0.012 240);
-  --muted: oklch(0.47 0.012 240);
-  --line: oklch(0.92 0.004 240);
-  --line-strong: oklch(0.82 0.006 240);
-  --accent: oklch(0.5 0.095 210);
-  --on-ink: oklch(1 0 0);
-  --tint: oklch(0.955 0.02 210);
-  --glow: oklch(0.5 0.095 210 / 0.07);
+  --bg: oklch(0.985 0.004 250);
+  --surface: oklch(1 0 0);
+  --ink: oklch(0.2 0.02 255);
+  --body: oklch(0.36 0.02 255);
+  --muted: oklch(0.47 0.018 255);
+  --line: oklch(0.91 0.006 250);
+  --line-strong: oklch(0.8 0.01 250);
+  --accent: oklch(0.47 0.11 178);
+  --accent-soft: oklch(0.95 0.03 178);
+  --on-ink: oklch(0.985 0.004 250);
 
   --sans: "Schibsted Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: "Source Serif 4", Charter, "Iowan Old Style", Georgia, serif;
@@ -29,25 +25,20 @@
   --z-skip: 20;
 }
 
-/* Dark is chroma-0 near-black; the same accent hue, lifted for contrast.
-   light-dark() follows color-scheme, which the toggle overrides via data-theme. */
-@supports (color: light-dark(white, black)) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --bg: light-dark(oklch(1 0 0), oklch(0.12 0 0));
-    --surface: light-dark(oklch(0.985 0.002 240), oklch(0.165 0.003 240));
-    --ink: light-dark(oklch(0.19 0.012 240), oklch(0.97 0.003 240));
-    --body: light-dark(oklch(0.35 0.012 240), oklch(0.84 0.006 240));
-    --muted: light-dark(oklch(0.47 0.012 240), oklch(0.7 0.01 240));
-    --line: light-dark(oklch(0.92 0.004 240), oklch(0.26 0.006 240));
-    --line-strong: light-dark(oklch(0.82 0.006 240), oklch(0.38 0.008 240));
-    --accent: light-dark(oklch(0.5 0.095 210), oklch(0.77 0.09 210));
-    --on-ink: light-dark(oklch(1 0 0), oklch(0.12 0 0));
-    --tint: light-dark(oklch(0.955 0.02 210), oklch(0.26 0.03 210));
-    --glow: light-dark(oklch(0.5 0.095 210 / 0.07), oklch(0.77 0.09 210 / 0.1));
+    --bg: oklch(0.165 0.01 255);
+    --surface: oklch(0.2 0.011 255);
+    --ink: oklch(0.96 0.005 255);
+    --body: oklch(0.83 0.01 255);
+    --muted: oklch(0.7 0.014 255);
+    --line: oklch(0.29 0.012 255);
+    --line-strong: oklch(0.4 0.014 255);
+    --accent: oklch(0.79 0.12 178);
+    --accent-soft: oklch(0.27 0.04 178);
+    --on-ink: oklch(0.165 0.01 255);
   }
 }
-:root[data-theme="light"] { color-scheme: light; }
-:root[data-theme="dark"] { color-scheme: dark; }
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -93,22 +84,6 @@ a:hover { text-decoration-thickness: 2px; }
 .nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--muted); text-decoration: none; font-size: 0.9375rem; }
 .nav a:hover { color: var(--ink); }
 
-.theme-toggle {
-  display: none; align-items: center; justify-content: center;
-  width: 44px; height: 44px; padding: 0;
-  background: transparent; color: var(--muted);
-  border: 1px solid var(--line); border-radius: 6px; cursor: pointer;
-  transition: color 200ms var(--ease), border-color 200ms var(--ease), transform 200ms var(--ease);
-}
-.js .theme-toggle { display: inline-flex; }
-.theme-toggle:hover { color: var(--ink); border-color: var(--line-strong); }
-.theme-toggle:active { transform: scale(0.96); }
-.theme-toggle svg { width: 20px; height: 20px; fill: currentColor; }
-.theme-toggle .sun { display: none; }
-:root[data-theme="dark"] .theme-toggle .sun { display: block; }
-:root[data-theme="dark"] .theme-toggle .moon { display: none; }
-.bar { position: relative; }
-
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--ink); color: var(--on-ink);
@@ -121,7 +96,7 @@ a:hover { text-decoration-thickness: 2px; }
 .btn-sm { min-height: 44px; padding: 7px 16px; font-size: 0.875rem; }
 
 /* Hero */
-.hero { padding-block: clamp(64px, 10vw, 136px) clamp(64px, 9vw, 120px); background: radial-gradient(52% 70% at 88% 0%, var(--glow), transparent 70%); }
+.hero { padding-block: clamp(56px, 10vw, 128px) clamp(56px, 8vw, 104px); }
 .hero-grid { display: grid; grid-template-columns: 1fr auto; gap: clamp(28px, 6vw, 88px); align-items: center; }
 .hero-role { color: var(--ink); font-size: 1.125rem; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 22px; }
 h1 {
@@ -141,7 +116,7 @@ h1 {
 }
 
 /* Sections */
-.section { padding-block: clamp(64px, 9vw, 128px); border-top: 1px solid var(--line); }
+.section { padding-block: clamp(48px, 7vw, 96px); border-top: 1px solid var(--line); }
 .section-head { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px 48px; align-items: end; margin-bottom: clamp(28px, 4vw, 48px); }
 h2 { margin: 0; color: var(--ink); font-size: clamp(1.75rem, 3.4vw, 2.5rem); font-weight: 600; letter-spacing: -0.03em; line-height: 1.1; text-wrap: balance; }
 .section-note { margin: 0; max-width: 56ch; color: var(--muted); text-wrap: pretty; }
@@ -154,7 +129,7 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(1.75rem, 3.4vw, 2.5rem); fon
 .case p.what { margin: 0 0 20px; max-width: 58ch; text-wrap: pretty; }
 
 .tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
-.tags li { font-size: 0.8125rem; line-height: 1; color: var(--ink); padding: 7px 12px; border-radius: 9999px; background: var(--tint); }
+.tags li { font-size: 0.8125rem; line-height: 1; color: var(--body); padding: 6px 9px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); }
 
 .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; align-self: start; border-top: 1px solid var(--line); }
 .metrics > div { padding: 18px 0 20px; border-bottom: 1px solid var(--line); }
@@ -170,7 +145,7 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(1.75rem, 3.4vw, 2.5rem); fon
 .bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; }
 .tile {
   position: relative; display: flex; flex-direction: column; gap: 14px;
-  padding: clamp(24px, 3vw, 36px);
+  padding: clamp(20px, 2.6vw, 30px);
   background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
   transition: border-color 200ms var(--ease), box-shadow 200ms var(--ease), transform 200ms var(--ease);
 }
@@ -194,8 +169,7 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(1.75rem, 3.4vw, 2.5rem); fon
 .tile.wide { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 14px clamp(24px, 4vw, 48px); align-items: center; }
 .tile.wide .copy { display: flex; flex-direction: column; gap: 14px; }
 
-:root[data-theme="dark"] .shot { filter: brightness(0.8) contrast(1.05); border-color: var(--line-strong); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme]) .shot { filter: brightness(0.8) contrast(1.05); border-color: var(--line-strong); } }
+@media (prefers-color-scheme: dark) { .shot { filter: brightness(0.8) contrast(1.05); border-color: var(--line-strong); } }
 
 /* Experience */
 .role-row { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px 48px; padding-block: 36px; border-top: 1px solid var(--line); }
@@ -245,8 +219,6 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(1.75rem, 3.4vw, 2.5rem); fon
     animation-timeline: view();
     animation-range: entry 0% entry 35%;
   }
-  .bento .tile:nth-child(3n+2) { animation-range: entry 6% entry 41%; }
-  .bento .tile:nth-child(3n+3) { animation-range: entry 12% entry 47%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
