@@ -5,15 +5,15 @@ layout: default
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="hero-role">Senior Data Scientist at Genpact &middot; Bengaluru</p>
+      <p class="hero-role">Senior Data Scientist &middot; Genpact, Bengaluru</p>
       <h1>I turn slow, manual data workflows into governed, self-service ones.</h1>
       <p class="hero-copy">
         I design and ship <strong>Text-to-SQL</strong>, <strong>RAG</strong> and <strong>agentic</strong> systems
         with LangChain, LangGraph and PyTorch. Before Genpact, at UST, I built the provider search system
-        (NER plus semantic search) that lifted search efficiency by 30%, still the result I'm asked about most.
+        (NER plus semantic search) that lifted search efficiency by 30%, still the result people ask about most.
       </p>
       <div class="hero-actions">
-        <a class="btn" href="pdf/Dristanta_Das_Senior_Data_Scientist.pdf" target="_blank" rel="noopener">Download resume</a>
+        <a class="btn" href="pdf/Dristanta_Das_Senior_Data_Scientist.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
         <a href="https://www.linkedin.com/in/dasdristanta13/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/dasdristanta13" target="_blank" rel="noopener">GitHub</a>
         <a href="mailto:dasdristanta13@gmail.com">Email</a>
@@ -27,7 +27,7 @@ layout: default
   <div class="wrap">
     <div class="section-head">
       <h2>Production systems</h2>
-      <p class="section-note">Three systems used by real teams, with the measured result for each.</p>
+      <p class="section-note">Three production systems, with the measured result for each.</p>
     </div>
 
     <article class="case">
@@ -86,11 +86,11 @@ layout: default
   <div class="wrap">
     <div class="section-head">
       <h2>More projects</h2>
-      <p class="section-note">Personal and academic work across retrieval, audio, NLP, statistics and forecasting. Each links to its repository.</p>
+      <p class="section-note">Personal and academic work across retrieval, audio, NLP, statistics and forecasting.</p>
     </div>
 
     <div class="bento">
-      <article class="tile s7">
+      <article class="tile s8">
         <h3><a href="https://github.com/dasdristanta13/RAG-ai-bot" target="_blank" rel="noopener">RAG QA bot<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
         <p>A Python QA bot with hybrid retrieval using BM25 and DPR. It integrates GPT-3.5-turbo, Phi-2 and Llama 3, with contextual compression to cut hallucinations.</p>
         <div class="tile-metrics">
@@ -100,7 +100,13 @@ layout: default
         <ul class="tags"><li>RAG</li><li>LangChain</li><li>BM25</li><li>DPR</li><li>LLMs</li></ul>
       </article>
 
-      <article class="tile s5">
+      <article class="tile s4">
+        <h3><a href="https://github.com/dasdristanta13/NLP_work/tree/main/Resume_Analysis" target="_blank" rel="noopener">Resume analysis with spaCy<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+        <p>A resume scoring system that evaluates and ranks candidates against job requirements using spaCy.</p>
+        <ul class="tags"><li>NLP</li><li>Information extraction</li><li>spaCy</li></ul>
+      </article>
+
+      <article class="tile s4">
         <h3><a href="https://github.com/dasdristanta13/2.5D-Visual-Sound" target="_blank" rel="noopener">2.5D Visual Sound<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
         <img class="shot" src="images/ML_Project_report.png" loading="lazy" alt="Project report figure for 2.5D Visual Sound">
         <p>Converts monaural audio to binaural by using the video, giving listeners a 3D sound sensation.</p>
@@ -115,26 +121,20 @@ layout: default
       </article>
 
       <article class="tile s4">
-        <h3><a href="https://github.com/dasdristanta13/NLP_work/tree/main/Resume_Analysis" target="_blank" rel="noopener">Resume analysis with spaCy<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-        <p>A resume scoring system that evaluates and ranks candidates against job requirements using spaCy.</p>
-        <ul class="tags"><li>NLP</li><li>Information extraction</li><li>spaCy</li></ul>
-      </article>
-
-      <article class="tile s4">
         <h3><a href="https://github.com/dasdristanta13/Bankruptcy_LDA" target="_blank" rel="noopener">Bankruptcy prediction with LDA<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
         <img class="shot" src="images/Rplot4.png" loading="lazy" alt="Linear discriminant analysis plot for bankruptcy prediction">
         <p>Linear Discriminant Analysis with dimensionality reduction to predict financial distress in companies.</p>
         <ul class="tags"><li>LDA</li><li>Statistical modeling</li><li>Classification</li></ul>
       </article>
 
-      <article class="tile s7">
+      <article class="tile s6">
         <h3><a href="https://github.com/dasdristanta13/Time-series" target="_blank" rel="noopener">Financial time-series forecasting<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
         <img class="shot" src="images/Nifty_Forecast.png" loading="lazy" alt="ARIMA forecast chart for the Nifty 50 index">
         <p>ARIMA forecasts for major global indices: Nifty 50, DAX, Dow Jones and Nikkei.</p>
         <ul class="tags"><li>Time series</li><li>ARIMA</li><li>Financial analysis</li></ul>
       </article>
 
-      <article class="tile s5">
+      <article class="tile s6">
         <h3><a href="https://github.com/dasdristanta13/Fifa21EDA/blob/main/README.md" target="_blank" rel="noopener">FIFA 21 data analysis<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
         <img class="shot" src="images/football.png" loading="lazy" alt="FIFA 21 player statistics chart">
         <p>Player attributes, market values and performance across positions and nationalities.</p>
@@ -170,8 +170,9 @@ layout: default
         <ul>
           <li>Architected and deployed the conversational analytics (Text-to-SQL) platform on LangChain and LangGraph, used by 50+ beta users across 10 concurrent sessions.</li>
           <li>Engineered the agentic workflows behind it: state management, error handling and dynamic routing, scaled to 12+ cross-functional teams.</li>
-          <li>Led the automated invoice-processing pipeline on LangChain and Azure OpenAI. Results for both systems are in <a href="#work">Production systems</a>.</li>
+          <li>Led the automated invoice-processing pipeline on LangChain and Azure OpenAI.</li>
         </ul>
+        <p class="more"><a href="#work">See the results for both systems</a></p>
       </div>
     </div>
 
