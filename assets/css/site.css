@@ -20,7 +20,7 @@
   --shell: oklch(0.972 0.003 240);
   --core: oklch(1 0 0);
   --hi: oklch(1 0 0 / 0.9);
-  --pill-bg: oklch(1 0 0 / 0.78);
+  --pill-bg: oklch(1 0 0 / 0.92);
   --grain: 0.04;
 
   --sans: "Schibsted Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -53,7 +53,7 @@
     --shell: light-dark(oklch(0.972 0.003 240), oklch(0.15 0.003 240));
     --core: light-dark(oklch(1 0 0), oklch(0.19 0.004 240));
     --hi: light-dark(oklch(1 0 0 / 0.9), oklch(1 0 0 / 0.07));
-    --pill-bg: light-dark(oklch(1 0 0 / 0.78), oklch(0.17 0.003 240 / 0.72));
+    --pill-bg: light-dark(oklch(1 0 0 / 0.92), oklch(0.17 0.003 240 / 0.9));
   }
 }
 :root[data-theme="light"] { color-scheme: light; }
@@ -307,7 +307,7 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(1.75rem, 3.4vw, 2.5rem); fon
   body { font-size: 1rem; }
   html { scroll-padding-top: 116px; }
   .site-header { top: 8px; margin-top: 8px; padding-inline: 8px; }
-  .bar { width: 100%; flex-wrap: wrap; border-radius: 28px; padding: 6px 6px 6px 18px; }
+  .bar { width: 100%; background: color-mix(in oklab, var(--bg) 97%, transparent); flex-wrap: wrap; border-radius: 28px; padding: 6px 6px 6px 18px; }
   .brand { margin-right: auto; }
   .nav { order: 3; width: 100%; gap: 4px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
   .hero-grid { grid-template-columns: 1fr; }
