@@ -13,7 +13,7 @@ layout: default
         (NER plus semantic search) that lifted search efficiency by 30%, still the result people ask about most.
       </p>
       <div class="hero-actions">
-        <a class="btn" href="pdf/Dristanta_Das_Senior_Data_Scientist.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
+        <a class="btn" href="pdf/Dristanta_Das_Senior_Data_Scientist.pdf" target="_blank" rel="noopener">Download resume (PDF)<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v11M7 12l5 5 5-5M5 20h14"/></svg></span></a>
         <a href="https://www.linkedin.com/in/dasdristanta13/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/dasdristanta13" target="_blank" rel="noopener">GitHub</a>
         <a href="mailto:dasdristanta13@gmail.com">Email</a>
@@ -91,62 +91,78 @@ layout: default
 
     <div class="bento">
       <article class="tile s8">
-        <h3><a href="https://github.com/dasdristanta13/RAG-ai-bot" target="_blank" rel="noopener">RAG QA bot<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-        <p>A Python QA bot with hybrid retrieval using BM25 and DPR. It integrates GPT-3.5-turbo, Phi-2 and Llama 3, with contextual compression to cut hallucinations.</p>
-        <div class="tile-metrics">
-          <div><b>40%</b><span>higher accuracy than traditional search</span></div>
-          <div><b>60%</b><span>fewer hallucinations</span></div>
+        <div class="core">
+          <h3><a href="https://github.com/dasdristanta13/RAG-ai-bot" target="_blank" rel="noopener">RAG QA bot<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <p>A Python QA bot with hybrid retrieval using BM25 and DPR. It integrates GPT-3.5-turbo, Phi-2 and Llama 3, with contextual compression to cut hallucinations.</p>
+          <div class="tile-metrics">
+            <div><b>40%</b><span>higher accuracy than traditional search</span></div>
+            <div><b>60%</b><span>fewer hallucinations</span></div>
+          </div>
+          <ul class="tags"><li>RAG</li><li>LangChain</li><li>BM25</li><li>DPR</li><li>LLMs</li></ul>
         </div>
-        <ul class="tags"><li>RAG</li><li>LangChain</li><li>BM25</li><li>DPR</li><li>LLMs</li></ul>
       </article>
 
       <article class="tile s4">
-        <h3><a href="https://github.com/dasdristanta13/NLP_work/tree/main/Resume_Analysis" target="_blank" rel="noopener">Resume analysis with spaCy<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-        <p>A resume scoring system that evaluates and ranks candidates against job requirements using spaCy.</p>
-        <ul class="tags"><li>NLP</li><li>Information extraction</li><li>spaCy</li></ul>
+        <div class="core">
+          <h3><a href="https://github.com/dasdristanta13/NLP_work/tree/main/Resume_Analysis" target="_blank" rel="noopener">Resume analysis with spaCy<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <p>A resume scoring system that evaluates and ranks candidates against job requirements using spaCy.</p>
+          <ul class="tags"><li>NLP</li><li>Information extraction</li><li>spaCy</li></ul>
+        </div>
       </article>
 
       <article class="tile s4">
-        <h3><a href="https://github.com/dasdristanta13/2.5D-Visual-Sound" target="_blank" rel="noopener">2.5D Visual Sound<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-        <img class="shot" src="images/ML_Project_report.png" loading="lazy" alt="Project report figure for 2.5D Visual Sound">
-        <p>Converts monaural audio to binaural by using the video, giving listeners a 3D sound sensation.</p>
-        <ul class="tags"><li>Audio processing</li><li>Computer vision</li><li>Deep learning</li></ul>
+        <div class="core">
+          <h3><a href="https://github.com/dasdristanta13/2.5D-Visual-Sound" target="_blank" rel="noopener">2.5D Visual Sound<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <img class="shot" src="images/ML_Project_report.png" loading="lazy" alt="Project report figure for 2.5D Visual Sound">
+          <p>Converts monaural audio to binaural by using the video, giving listeners a 3D sound sensation.</p>
+          <ul class="tags"><li>Audio processing</li><li>Computer vision</li><li>Deep learning</li></ul>
+        </div>
       </article>
 
       <article class="tile s4">
-        <h3><a href="https://github.com/dasdristanta13/NLP_work/tree/main/Topic_modelling" target="_blank" rel="noopener">Topic modelling of NLP repositories<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-        <img class="shot" src="images/Topic_modelling.png" loading="lazy" alt="Topic model visualization of popular NLP repositories">
-        <p>Uses the GitHub API and spaCy to see how NLP libraries are used across the community.</p>
-        <ul class="tags"><li>Topic modeling</li><li>GitHub API</li><li>spaCy</li></ul>
+        <div class="core">
+          <h3><a href="https://github.com/dasdristanta13/NLP_work/tree/main/Topic_modelling" target="_blank" rel="noopener">Topic modelling of NLP repositories<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <img class="shot" src="images/Topic_modelling.png" loading="lazy" alt="Topic model visualization of popular NLP repositories">
+          <p>Uses the GitHub API and spaCy to see how NLP libraries are used across the community.</p>
+          <ul class="tags"><li>Topic modeling</li><li>GitHub API</li><li>spaCy</li></ul>
+        </div>
       </article>
 
       <article class="tile s4">
-        <h3><a href="https://github.com/dasdristanta13/Bankruptcy_LDA" target="_blank" rel="noopener">Bankruptcy prediction with LDA<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-        <img class="shot" src="images/Rplot4.png" loading="lazy" alt="Linear discriminant analysis plot for bankruptcy prediction">
-        <p>Linear Discriminant Analysis with dimensionality reduction to predict financial distress in companies.</p>
-        <ul class="tags"><li>LDA</li><li>Statistical modeling</li><li>Classification</li></ul>
+        <div class="core">
+          <h3><a href="https://github.com/dasdristanta13/Bankruptcy_LDA" target="_blank" rel="noopener">Bankruptcy prediction with LDA<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <img class="shot" src="images/Rplot4.png" loading="lazy" alt="Linear discriminant analysis plot for bankruptcy prediction">
+          <p>Linear Discriminant Analysis with dimensionality reduction to predict financial distress in companies.</p>
+          <ul class="tags"><li>LDA</li><li>Statistical modeling</li><li>Classification</li></ul>
+        </div>
       </article>
 
       <article class="tile s6">
-        <h3><a href="https://github.com/dasdristanta13/Time-series" target="_blank" rel="noopener">Financial time-series forecasting<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-        <img class="shot" src="images/Nifty_Forecast.png" loading="lazy" alt="ARIMA forecast chart for the Nifty 50 index">
-        <p>ARIMA forecasts for major global indices: Nifty 50, DAX, Dow Jones and Nikkei.</p>
-        <ul class="tags"><li>Time series</li><li>ARIMA</li><li>Financial analysis</li></ul>
+        <div class="core">
+          <h3><a href="https://github.com/dasdristanta13/Time-series" target="_blank" rel="noopener">Financial time-series forecasting<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <img class="shot" src="images/Nifty_Forecast.png" loading="lazy" alt="ARIMA forecast chart for the Nifty 50 index">
+          <p>ARIMA forecasts for major global indices: Nifty 50, DAX, Dow Jones and Nikkei.</p>
+          <ul class="tags"><li>Time series</li><li>ARIMA</li><li>Financial analysis</li></ul>
+        </div>
       </article>
 
       <article class="tile s6">
-        <h3><a href="https://github.com/dasdristanta13/Fifa21EDA/blob/main/README.md" target="_blank" rel="noopener">FIFA 21 data analysis<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-        <img class="shot" src="images/football.png" loading="lazy" alt="FIFA 21 player statistics chart">
-        <p>Player attributes, market values and performance across positions and nationalities.</p>
-        <ul class="tags"><li>EDA</li><li>Sports analytics</li><li>Python</li></ul>
+        <div class="core">
+          <h3><a href="https://github.com/dasdristanta13/Fifa21EDA/blob/main/README.md" target="_blank" rel="noopener">FIFA 21 data analysis<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <img class="shot" src="images/football.png" loading="lazy" alt="FIFA 21 player statistics chart">
+          <p>Player attributes, market values and performance across positions and nationalities.</p>
+          <ul class="tags"><li>EDA</li><li>Sports analytics</li><li>Python</li></ul>
+        </div>
       </article>
 
       <article class="tile s12 wide">
-        <img class="shot" src="images/zomato.png" loading="lazy" alt="Zomato restaurant data analysis chart">
-        <div class="copy">
-          <h3><a href="https://github.com/dasdristanta13/Zomato_Food_EDA" target="_blank" rel="noopener">Zomato food data analysis<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-          <p>Analysis of Zomato restaurant and delivery data covering customer preferences, pricing strategy and ratings.</p>
-          <ul class="tags"><li>Data visualization</li><li>R and Python</li><li>Business intelligence</li></ul>
+        <div class="core">
+          <img class="shot" src="images/zomato.png" loading="lazy" alt="Zomato restaurant data analysis chart">
+          <div class="copy">
+            <h3><a href="https://github.com/dasdristanta13/Zomato_Food_EDA" target="_blank" rel="noopener">Zomato food data analysis<span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+            <p>Analysis of Zomato restaurant and delivery data covering customer preferences, pricing strategy and ratings.</p>
+            <ul class="tags"><li>Data visualization</li><li>R and Python</li><li>Business intelligence</li></ul>
+          </div>
         </div>
       </article>
     </div>
