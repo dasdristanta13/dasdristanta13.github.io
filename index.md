@@ -33,7 +33,7 @@ layout: default
     <article class="case">
       <div>
         <h3>Conversational analytics: Text-to-SQL platform</h3>
-        <p class="where">Genpact &middot; In production</p>
+        <p class="where">Genpact</p>
         <p class="what">An agentic Text-to-SQL platform over a certified semantic layer. Business teams ask in plain English and get a governed, explained answer instead of waiting on a data-team ticket.</p>
         <ul class="tags">
           <li>LangChain</li><li>LangGraph</li><li>Azure OpenAI</li><li>Agentic AI</li><li>Postgres</li>
@@ -50,7 +50,7 @@ layout: default
     <article class="case">
       <div>
         <h3>Invoice processing pipeline</h3>
-        <p class="where">Genpact &middot; In production</p>
+        <p class="where">Genpact</p>
         <p class="what">An LLM extraction pipeline for multi-format invoices across EMEA and NAM. Structured-output validation and a human-review queue for low-confidence fields replace blind automation.</p>
         <ul class="tags">
           <li>LangChain</li><li>Azure OpenAI</li><li>Prompt engineering</li><li>Structured output</li>
@@ -67,7 +67,7 @@ layout: default
     <article class="case">
       <div>
         <h3>Provider search system</h3>
-        <p class="where">UST &middot; In production</p>
+        <p class="where">UST</p>
         <p class="what">An NLP and semantic-search system that maps layperson symptom descriptions to standardized medical terminology, so search resolves meaning rather than keywords. Built on NER and vector retrieval, before the GenAI wave.</p>
         <ul class="tags">
           <li>NLP</li><li>NER</li><li>Semantic search</li><li>Open-source LLMs</li>
@@ -168,9 +168,9 @@ layout: default
       <div>
         <p class="role-title">Senior Data Scientist</p>
         <ul>
-          <li>Architected and deployed an end-to-end conversational analytics (Text-to-SQL) platform with LangChain and LangGraph, cutting query-formulation time by 65% for 50+ beta users across 10 concurrent sessions.</li>
-          <li>Engineered agentic workflows with state management, error handling and dynamic routing at a 92% task-completion rate, scaling to 500+ weekly queries in production with 12+ cross-functional teams.</li>
-          <li>Led an automated invoice-processing pipeline with LangChain and Azure OpenAI, reaching 85%+ extraction accuracy across 10,000+ invoices in 8+ languages and cutting manual processing time by 60%.</li>
+          <li>Architected and deployed the conversational analytics (Text-to-SQL) platform on LangChain and LangGraph, used by 50+ beta users across 10 concurrent sessions.</li>
+          <li>Engineered the agentic workflows behind it: state management, error handling and dynamic routing, scaled to 12+ cross-functional teams.</li>
+          <li>Led the automated invoice-processing pipeline on LangChain and Azure OpenAI. Results for both systems are in <a href="#work">Production systems</a>.</li>
         </ul>
       </div>
     </div>
